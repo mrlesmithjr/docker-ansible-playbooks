@@ -1,9 +1,9 @@
 #Builds Ubuntu Apache2 image
 
-MAINTAINER mrlesmithjr@gmail.com
-
 #Uses ubuntu:14.04.3 with ansible installed
 FROM mrlesmithjr/ubuntu-14.04.3-ansible
+
+MAINTAINER mrlesmithjr@gmail.com
 
 #Installs git
 RUN apt-get update && apt-get install -y \

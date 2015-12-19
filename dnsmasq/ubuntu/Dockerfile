@@ -1,7 +1,7 @@
 #Builds Ubuntu dnsmasq image
 
-FROM mrlesmithjr/ansible:ubuntu-12.04
-#FROM mrlesmithjr/ansible:ubuntu-14.04
+#FROM mrlesmithjr/ansible:ubuntu-12.04
+FROM mrlesmithjr/ansible:ubuntu-14.04
 
 MAINTAINER mrlesmithjr@gmail.com
 
@@ -33,6 +33,6 @@ RUN rm -rf /opt/ansible-playbooks
 RUN apt-get clean
 
 #Expose ports
-EXPOSE 5353/udp
+EXPOSE 53/udp
 
 CMD ["/usr/sbin/dnsmasq", "-d"]

@@ -1,7 +1,7 @@
 #Builds Ubuntu Apache2 image
 
-#Uses ubuntu:14.04.3 with ansible installed
-FROM mrlesmithjr/ubuntu-14.04.3-ansible
+#FROM mrlesmithjr/ansible:ubuntu-12.04
+FROM mrlesmithjr/ansible:ubuntu-14.04
 
 MAINTAINER mrlesmithjr@gmail.com
 

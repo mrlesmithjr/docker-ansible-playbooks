@@ -4,5 +4,5 @@
   vars:
     - mysql_allow_remote_connections: true
   roles:
-    - role: ansible-mariadb-mysql
+    - role: ansible-mysql
   tasks:

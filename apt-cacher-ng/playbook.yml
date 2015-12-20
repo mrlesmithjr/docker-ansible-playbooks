@@ -2,6 +2,8 @@
 - hosts: all
   sudo: true
   vars:
+    - apt_cacher_server: '{{ ansible_hostname }}'
+    - enable_apt_caching: true
   roles:
     - role: ansible-apt-cacher-ng
   tasks:

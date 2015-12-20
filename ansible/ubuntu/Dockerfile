@@ -1,7 +1,8 @@
 #Ubuntu Docker image with Ansible
 
-FROM ubuntu:12.04
+#FROM ubuntu:12.04
 #FROM ubuntu:14.04
+FROM ubuntu
 
 MAINTAINER mrlesmithjr@gmail.com
 

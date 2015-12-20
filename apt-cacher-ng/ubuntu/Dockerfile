@@ -1,7 +1,7 @@
 #Builds Ubuntu Apt-Cacher-NG image
 
 #FROM mrlesmithjr/ansible:ubuntu-12.04
-FROM mrlesmithjr/ansible:ubuntu-14.04
+FROM mrlesmithjr/ansible
 
 MAINTAINER mrlesmithjr@gmail.com
 

@@ -23,7 +23,7 @@ RUN git clone https://github.com/mrlesmithjr/docker-ansible-playbooks.git /opt/a
 RUN ansible-galaxy install -r /opt/ansible-playbooks/apt-cacher-ng/requirements.yml
 
 #Run Ansible playbook to install Apt-Cacher-NG
-RUN ansible-playbook -i "localhost," -c local /opt/ansible-playbooks/apt-cacher-ng/playbook.yml
+RUN ansible-playbook -i "localhost," -c local /opt/ansible-playbooks/apt-cacher-ng/playbook.yml --extra-vars="apt_cacher_server=localhost"
 
 #Remove Ansible roles
 RUN ansible-galaxy remove /etc/ansible/roles/*

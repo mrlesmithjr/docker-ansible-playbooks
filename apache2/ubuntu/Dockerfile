@@ -1,7 +1,8 @@
 #Builds Ubuntu Apache2 image
 
 #FROM mrlesmithjr/ansible:ubuntu-12.04
-FROM mrlesmithjr/ansible:ubuntu-14.04
+#FROM mrlesmithjr/ansible:ubuntu-14.04
+FROM mrlesmithjr/ansible
 
 MAINTAINER mrlesmithjr@gmail.com
 
@@ -21,7 +22,7 @@ RUN git clone https://github.com/mrlesmithjr/docker-ansible-playbooks.git /opt/a
 RUN ansible-galaxy install -r /opt/ansible-playbooks/apache2/requirements.yml
 
 #Run Ansible playbook to install Apache2
-RUN ansible-playbook -i "localhost," -c local /opt/ansible-playbooks/apache2/apache2.yml
+RUN ansible-playbook -i "localhost," -c local /opt/ansible-playbooks/apache2/playbook.yml
 
 #Remove Ansible roles
 RUN ansible-galaxy remove /etc/ansible/roles/*

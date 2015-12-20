@@ -35,6 +35,6 @@ RUN apt-get clean
 #Expose ports
 EXPOSE 9200
 EXPOSE 9300
-EXPOSE 54328
+EXPOSE 54328/udp
 
 CMD ["/usr/share/elasticsearch/bin/elasticsearch"]

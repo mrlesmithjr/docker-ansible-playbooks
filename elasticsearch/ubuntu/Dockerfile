@@ -35,5 +35,6 @@ RUN apt-get clean
 #Expose ports
 EXPOSE 9200
 EXPOSE 9300
+EXPOSE 54328
 
-CMD ["/elasticsearch/bin/elasticsearch"]
+CMD ["/usr/share/elasticsearch/bin/elasticsearch"]

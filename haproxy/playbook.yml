@@ -1,0 +1,8 @@
+---
+- hosts: all
+  sudo: true
+  vars:
+    - config_haproxy: true
+  roles:
+    - role: ansible-haproxy
+  tasks:

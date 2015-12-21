@@ -3,6 +3,7 @@
   sudo: true
   vars:
     - config_haproxy: true
+    - haproxy_docker_install: true
   roles:
     - role: ansible-haproxy
   tasks:

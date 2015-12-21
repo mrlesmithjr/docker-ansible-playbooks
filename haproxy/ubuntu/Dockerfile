@@ -34,6 +34,6 @@ RUN rm -rf /opt/ansible-playbooks
 RUN apt-get clean
 
 #Expose ports
-EXPOSE 80 443
+EXPOSE 80 443 9090
 
 CMD ["haproxy", "-f", "/etc/haproxy/haproxy.cfg"]

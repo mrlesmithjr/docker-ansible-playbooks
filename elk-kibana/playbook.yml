@@ -3,5 +3,5 @@
   sudo: true
   vars:
   roles:
-    - role: ansible-apache2
+    - role: ansible-elk-kibana
   tasks:
